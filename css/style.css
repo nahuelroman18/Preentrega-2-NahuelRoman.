@@ -5,14 +5,15 @@
     text-align: center;
 }
 body{
+    padding: 0%;
+    margin: 0%;
     background-color: rgb(239, 52, 52)
-}
-main{
-    background-color: white;
-    margin: 0% 60px 5px 60px;
+    
 }
 .container{
-    padding-top: 100px;
+    max-width: 100%;
+    padding-top: 5%;
+    background-color: white;
 }
 .borde{
     padding-top: 100px;
@@ -37,8 +38,7 @@ main{
     width: 850px;
 }
 .banner{
-    height: 700px;
-    max-width: 100%;
+    width: 100%;
 }
 .cartaContacto{
     height: 300px;
@@ -47,25 +47,26 @@ main{
 .relleno{
     display: flex;
     flex-direction: row;
-
 }
-.column {
-    float: left;
-    width: 25%;
-    padding: 20px;
-  } */
-@media screen and (max-width: 992px) {
-    .column {
-      width: 50%;
+
+
+/* media queries */
+
+@media (max-width: 600px){
+    body{
+        background-color:rgb(7, 99, 130) ;
     }
-    .row{
-        width: 50%;
+@media (max-width: 320px) {
+    body{
+        background-color:black ;
     }
-    banner{
-        max-width: 100%;
+    .conteiner{
+        display: grid;
+
     }
-    .
-  }
-.abrir-menu{
-    display: none;
+    .banner{
+        display: none;
+
+    }
+}
 }
