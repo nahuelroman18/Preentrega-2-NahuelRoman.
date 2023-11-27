@@ -1,30 +1,60 @@
+.destinos h2{
+  height: 70%;
+  text-align: center;
+}
+.tipos_container{
+  width:100%;
+  padding: 1rem 4%;
+  height: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3,1fr);
+}
+.seccion-grilla{
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.cabecera, .navbar, .seccion, .seccion1, .seccion2, .pie{
+  padding: 10px;
+  border: 1px solid black;
+}
 .grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-area: 10px;
-    grid-auto-rows: minmax(100px, auto);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 15%;
+  grid-template-rows: 60px 400px repeat();
+  grid-template-areas:"cabecera cabecera cabecera"
+  "seccion seccion publicidad"
+  "seccion1 seccion1 publicidad"
+  "seccion2 seccion2 publicidad"
+  "pie pie pie";
 }
-.content_tipos1 {
-    grid-column: 1;
-    grid-row:  1;
-  }
-  .content_tipos2 {
-    grid-column: 2;
-    grid-row: 1 ;
-  }
-  .content_tipos3 {
-    grid-column: 3;
-    grid-row: 1;
-  }
-  .content_tipos4{
-    grid-column: 1 / 2;
-    grid-row: 2 ;
-  }
-  .content_tipos5{
-    grid-column: 2 / 4;
-    grid-row: 2;
+.cabecera{
+  background-image: url('../img/banner_definitivo.jpg');
+  background-repeat: no-repeat;
+  background-position: center -200px;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.2rem;
+  grid-area: cabecera;
 }
-.content_tipos6{
-    grid-column: 1 / 4;
-    grid-row: 3;
+.publicidad{
+  grid-area: publicidad;
+}
+.seccion{
+  grid-area: seccion;
+}
+.seccion1{
+  grid-area: seccion1;
+}
+.seccion2{
+  grid-area: seccion2;
+}
+.pie{
+  background-color: greenyellow;
+  grid-area: pie;
 }

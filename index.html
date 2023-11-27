@@ -11,111 +11,133 @@
     <title>TODOMOTOS</title>
   </head>
   <body>
-    <header>
-      <nav class="navegacion">
-        <div class="logo__container">
-          <img
-            src="./img/logo principal.jpg"
-            alt="logo de la marca"
-            class="LogoRedes"
-          />
-          <span>TODOMOTOS</span>
-          <ul class="navegacion__nav">
-            <li class="nav__item active">
-              <a href="index.html">
-                <i class="bx bx-home"></i>
-                inicio
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="assets/novedades.html">
-                <i class="bx bx-novedades"></i>
-                novedades</a
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">TODOMOTOS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./assets/marcas.html"
+                >marcas</a
               >
             </li>
-            <li class="nav__item">
-              <a href="assets/indumentaria.html">
-                <i class="bx bx-indumentaria"></i>
-                indumentaria</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="./assets/novedades.html">novedades</a>
             </li>
-            <li class="nav__item">
-              <a href="assets/contacto.html">
-                <i class="bx bx-contacto"></i>
-                contacto</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="./assets/indumentaria.html">indumentaria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./assets/contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
       <div>
         <img
-          src="./img/banner_definitivo.jpg"
+          src="/img/banner_definitivo.jpg"
           alt="banner de motocross"
           class="banner"
         />
       </div>
     </header>
-    <h1>TIPOS DE MOTOS</h1>
-    <section class="grid">
-      <div class="content-tipos1">
+    <section class="tipos">
+      <h1>TIPOS DE MOTOS</h1>
+      <div class="tipos tipos_container">
+      <article class="card">
         <img
-          src="img/icono_street.jpg"
-          alt="moto de calle"
-          class="logoFooter"
+        src="img/icono_street.jpg"
+        alt="moto de calle"
+        class="logoFooter"
         />
-        <h2>street</h2>
-        <p>
-          Disponen de lo último en tecnología, materiales ligeros y una potencia
-          que sobrepasa el peso.<br />
-          Son unidades que dejaron de ser útiles para la calle y piden a gritos
-          una pista.
-        </p>
-      </div>
-      <div class="content_tipos2">
+        <div class="card_title">
+          <h2>street</h2>
+        </div>
+        <div class="card_container">
+          <p>
+            Disponen de lo último en tecnología, materiales ligeros y una potencia
+            que sobrepasa el peso.<br />
+            Son unidades que dejaron de ser útiles para la calle y piden a gritos
+            una pista.
+          </p>
+          <a href="/assets/contacto.html" class="boton boton_descubrir">sacate las dudas</a>
+        </div>
+      </article>
+      <article class="card">
         <img src="img/icono_scooter.jpg" alt="scooter" class="logoFooter" />
-        <h2>scooter</h2>
-        <p>
-          Son modelos prácticos para el transporte urbano que te hacen olvidar
-          las complicaciones de una caja de cambios.
-        </p>
+        <div class="card_title">
+          <h2>scooter</h2>
+        </div>
+        <div class="card_container">
+          <p>
+            Son modelos prácticos para el transporte urbano que te hacen olvidar
+            las complicaciones de una caja de cambios.
+          </p>
+          <a href="/assets/contacto.html" class="boton boton_descubrir">sacate las dudas</a>
       </div>
-      <div class="content_tipos3">
-        <img src="img/icono_enduro.png" alt="enduro" class="logoFooter" />
-        <h2>enduro</h2>
-        <p>
-          El enduro es una modalidad del apasionante deporte del motocross. A
-          diferencia de otros tipos el enduro mezcla el contacto del motor con
-          la naturaleza ya que la práctica de este deporte exige tracks de
-          tierra y generalmente son al aire libre y con el medio ambiente de por
-          medio.
-        </p>
+      </article>
+      <article class="card">
+        <img src="img/icono_enduro.png" alt="enduro" class="" />
+        <div class="card_title">
+          <h2>enduro</h2>
+        </div>
+        <div class="card_container">
+          <p>
+            El enduro es una modalidad del apasionante deporte del motocross. A
+            diferencia de otros tipos el enduro mezcla el contacto del motor con
+            la naturaleza ya que la práctica de este deporte exige tracks de
+            tierra y generalmente son al aire libre y con el medio ambiente de por
+           medio.
+          </p>
+          <a href="/assets/contacto.html" class="boton boton_descubrir">sacate las dudas</a>
+        <div>
+      </article>
       </div>
-      <div class="content_tipos4">
-        <h2>Llego la nueva <span>FZ-S FI V3.0</span></h2>
-        <p>
-          Se destaca el nuevo diseño del faro con tecnología de iluminación LED,
-          que propone nuevos niveles de equipamiento para aquellos que buscan
-          mayores prestaciones. La posición de manejo ergonómica y cómoda
-          permite una conducción sencilla y ágil.<br />
-          Además, esta evolución del modelo FZ-S mantiene su propuesta de rápida
-          respuesta, confiabilidad y eficiencia de consumo en el uso urbano.
-        </p>
-      </div>
-      <div class="content_tipos6">
-        <img src="./img/fz 3.0.jpg" alt="moto yamaha FZ-S FI V3.0" class="fz" />
-      </div>
-      <div class="content_tipos5">
-        <iframe
-          class="video"
-          width="1100"
-          height="707"
-          src="https://www.youtube.com/embed/pWDP9HdoGj4"
-          title="Impossible Hill Climb Arette - Rocket Dirt Bike Race - 2023"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+      <!-- publicidad -->
+      <div class="tipos">
+        <article class="card_publicitario">
+          <div class="card_publicitaria_container">
+            <div class="card_title">
+              <h2>Llego la nueva <span>FZ-S FI V3.0</span></h2>
+            </div>
+            <div class="card_container">
+              <p>
+              Se destaca el nuevo diseño del faro con tecnología de iluminación LED,
+              que propone nuevos niveles de equipamiento para aquellos que buscan
+              mayores prestaciones. La posición de manejo ergonómica y cómoda
+              permite una conducción sencilla y ágil.<br />
+              Además, esta evolución del modelo FZ-S mantiene su propuesta de rápida
+              respuesta, confiabilidad y eficiencia de consumo en el uso urbano.
+              </p>
+              <a href="/assets/novedades.html" class="boton boton_descubrir">ver mas</a>
+            </div>
+          </div>
+          <img src="/img/fz 3.0.jpg" alt="moto yamaha FZ-S FI V3.0" class="imgNovedades" />
+        </article>
+        <article class="card_publicitario">
+          <iframe
+            class="video"
+            width="1100"
+            height="707"
+            src="https://www.youtube.com/embed/pWDP9HdoGj4"
+            title="Impossible Hill Climb Arette - Rocket Dirt Bike Race - 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;      picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+       </article>
       </div>
     </section>
     <footer>
@@ -127,7 +149,7 @@
         </p>
       </div>
       <div>
-        <img src="./img/logoMarca.jpg" alt="logo viejo" class="logoFooter" />
+        <img src="./img/iconofooter.png" alt="logo viejo"/>
         <p>Todo Motos, derechos reservados por la CIA</p>
       </div>
       <div>
@@ -165,6 +187,6 @@
         </a>
       </div>
     </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
