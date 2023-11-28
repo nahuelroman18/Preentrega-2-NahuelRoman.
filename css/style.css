@@ -25,6 +25,7 @@
 /* cards */
 
 .card{
+    padding: 10px;
     height: 400px;
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -45,6 +46,7 @@
     padding: 10px;
     font-size: .80rem;
     display: flex;
+    flex-direction: column;
 }
 .card .card_container a.boton {
     margin-top: 10px;
@@ -78,6 +80,13 @@ background: linear-gradient(90deg, rgba(255,85,0,1) 0%, rgba(140,129,130,1) 15%,
     height: 70px;
 }
 /* seccion */
+
+.seccion{
+    padding: 30px;
+}
+.seccion_carrusel{
+    padding-top: 20px;
+}
 
 /* .seccion2{
     display: flex;
