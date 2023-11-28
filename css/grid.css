@@ -1,7 +1,3 @@
-.destinos h2{
-  height: 70%;
-  text-align: center;
-}
 .tipos_container{
   width:100%;
   padding: 1rem 4%;
@@ -21,9 +17,11 @@
 }
 .cabecera, .navbar, .seccion, .seccion1, .seccion2, .pie{
   padding: 10px;
-  border: 1px solid black;
 }
+
+/* grid */
 .grid{
+  background-color: rgb(243, 118, 118);
   display: grid;
   grid-template-columns: repeat(2, 1fr) 15%;
   grid-template-rows: 500px;
@@ -33,6 +31,20 @@
   "seccion2 seccion2 publicidad"
   "pie pie pie";
 }
+
+.grid_marcas{
+  background-color: rgb(243, 118, 118);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 15%;
+  grid-template-rows: 500px;
+  grid-template-areas:"cabecera cabecera cabecera"
+  "seccion seccion publicidad1"
+  "seccion1 seccion1 publicidad2"
+  "seccion2 seccion2 publicidad3"
+  "seccion3 seccion3 publicidad4"
+  "pie pie pie";
+}
+
 .cabecera{
   background-image: url('../img/banner_definitivo.jpg');
   background-repeat: no-repeat;
@@ -42,7 +54,31 @@
   font-size: 19rem;
   grid-area: cabecera;
 }
+.publicidad1{
+  background-image: url('../img/concesionariaYamaha.jpg');
+  background-position: center;
+  grid-area: publicidad1;
+}
+.publicidad2{
+  background-image: url('../img/concesionariaBenelli.png');
+  background-repeat: repeat;
+  grid-area: publicidad2;
+}
+.publicidad3{
+  background-image: url('../img/concesionariaHonda.webp');
+  background-repeat: repeat;
+  background-position: center;
+  grid-area: publicidad3;
+}
+.publicidad4{
+  background-image: url('../img/concesionariaSuzuki.jpg');
+  background-repeat: repeat;
+  background-position: center;
+  grid-area: publicidad4;
+}
 .publicidad{
+  background-image: url('../img/casinozeus.jpg');
+  background-position: center;
   grid-area: publicidad;
 }
 .seccion{
@@ -54,7 +90,9 @@
 .seccion2{
   grid-area: seccion2;
 }
+.seccion3{
+  grid-area: seccion3;
+}
 .pie{
-  background-color: greenyellow;
   grid-area: pie;
 }

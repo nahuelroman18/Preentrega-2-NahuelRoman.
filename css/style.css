@@ -53,11 +53,14 @@
     width: 110px;
     align-self: flex-end;
 }
-.imgNovedades{
-    width: 320px;
-    height: 320px;
+.card_icono{
+    width: 60px;
+    height: 70px;
 }
-
+.producto{
+    display: flex;
+    justify-content: center;
+}
 /* publicidad */
 .card_publicitario{
     display: flex;
@@ -68,34 +71,52 @@
 }
 .card_publicitaria_container{
     background: rgb(255,85,0);
-background: linear-gradient(90deg, rgba(255,85,0,1) 0%, rgba(140,129,130,1) 15%, rgba(244,230,139,1) 41%, rgba(244,229,139,1) 53%, rgba(237,238,145,1) 69%, rgba(244,229,139,1) 100%);
+    background: linear-gradient(90deg, rgba(255,85,0,1) 0%, rgba(140,129,130,1) 15%, rgba(244,230,139,1) 41%, rgba(244,229,139,1) 53%, rgba(237,238,145,1) 69%, rgba(244,229,139,1) 100%);
+}
+.texto_publicitario{
+    background-color: yellow;
 }
 
 /* imagines */
 .imgNovedades{
-
+    
 }
-.card_icono{
-    width: 60px;
-    height: 70px;
+.imgNovedades{
+    width: 320px;
+    height: 320px;
+}
+.remera{
+    width: 150px;
 }
 /* seccion */
-
 .seccion{
     padding: 30px;
 }
 .seccion_carrusel{
-    padding-top: 20px;
+    padding-top: 10px;
 }
-
-/* .seccion2{
+.seccion_grid{
     display: flex;
-    align-items: center; */
-
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    margin: 10px;
+}
+.seccion_grid_text{
+    width: 50%;
 }
 
 /* footer */
 .logoRedes{
     width: 15px;
     height: 15px;
+}
+.pie_container{
+    background-color: background: rgb(247,9,9);
+    background: linear-gradient(90deg, rgba(247,9,9,0.4542191876750701) 2%, rgba(237,238,145,0.27494747899159666) 7%, rgba(244,229,139,1) 100%);
+}
+.carousel-inner{
+    padding: 15px;
 }
