@@ -10,23 +10,21 @@
 .tipos{
     padding: 2rem 4%;
     width: 100%;
-    background-color: rgb(255, 65, 65)
+    background-color: rgb(243, 118, 118);
 }
 .tipos h2{
     height: 70px;
     text-align: center;
 }
-.tipos_container{
+/* .tipos_container{
     width: 100%;
     padding: 1rem 4%;
     height: 100%;
-}
+} */
 
 /* cards */
 
 .card{
-    padding: 10px;
-    height: 400px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -45,14 +43,43 @@
     width: 100%;
     padding: 10px;
     font-size: .80rem;
-    display: flex;
-    flex-direction: column;
+
 }
+/* boton */
 .card .card_container a.boton {
-    margin-top: 10px;
-    width: 110px;
-    align-self: flex-end;
-}
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card .card_container a.boton:hover {
+    background-color: #166cb2;
+  }
+  
+  .card .card_container a.boton:active {
+    background-color: #46afbd;
+  }
+  .my-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .my-button:hover {
+    background-color: #45a049;
+  }
+  
+  .my-button:active {
+    background-color: #3e8e41;
+  }
+  
+
 .card_icono{
     width: 60px;
     height: 70px;

@@ -31,6 +31,15 @@
   "seccion2 seccion2 publicidad"
   "pie pie pie";
 }
+.grid_contacto{
+  background-color: rgb(243, 118, 118);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 15%;
+  grid-template-rows: 500px;
+  grid-template-areas:"cabecera cabecera cabecera"
+  "seccion seccion publicidad5"
+  "pie pie pie";
+}
 
 .grid_marcas{
   background-color: rgb(243, 118, 118);
@@ -47,6 +56,7 @@
 
 .cabecera{
   background-image: url('../img/banner_definitivo.jpg');
+  background-repeat: no-repeat;
   background-position: center -50px;
   background-size: cover;
   font-weight: 900;
@@ -102,14 +112,131 @@
 }
 
 /* media queries */
-
-@media (max-width:920px){
-  .grid_marcas{
-      background-color: blue;
-  } 
+@media (max-width:943px){
+  .tipos_container{
+    width:100%;
+    padding: 1rem;
+    height: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card_publicitario{
+    display: flex;
+    flex-direction: column;
+  }
+  .card_publicitaria_container{
+    background: rgb(247,236,9);
+background: linear-gradient(90deg, rgba(247,236,9,0.4542191876750701) 0%, rgba(237,238,145,0.27494747899159666) 0%, rgba(244,229,139,1) 100%);
+  }
+  .video{
+  width: 100%;
+  height: 300px;
 }
-@media (max-width:768px){
+.cabecera{
+  background-position: 0px;
+}
+
+.publicidad5{
+  display: none;
+}
+.grid_contacto{
+  background-color: rgb(243, 118, 118);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 500px;
+  grid-template-areas:"cabecera"
+  "seccion"
+  "pie";
+}
+}
+@media (max-width:600px){
+
+}
+@media (max-width:320px){
+  /* index */
+  .tipos_container{
+    width:100%;
+    padding: 1rem;
+    height: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card_publicitario{
+    display: flex;
+    flex-direction: column;
+  }
+  .card_publicitaria_container{
+    background: rgb(247,236,9);
+background: linear-gradient(90deg, rgba(247,236,9,0.4542191876750701) 0%, rgba(237,238,145,0.27494747899159666) 0%, rgba(244,229,139,1) 100%);
+  }
+  .video{
+    width: 150%;
+    height: 200px;
+  }
+  /* marcas */
   .grid_marcas{
+    background-color: rgb(243, 118, 118);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas:"cabecera"
+    "seccion" 
+    "publicidad1"
+    "seccion1" 
+    "publicidad2"
+    "seccion2" 
+    "publicidad3"
+    "seccion3" 
+    "publicidad4"
+    "pie";
+  }
+  /* novedades */
+  .seccion-grilla{
+  }
+  .grid{
+    width: 100%;
+    background-color: rgb(243, 118, 118);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas:"cabecera"
+    "seccion"
+    "seccion1"
+    "seccion2"
+    "publicidad5"
+    "pie";
+  }
+  .seccion_grid{
+    width: 92%;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
     background-color: white;
-} 
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    margin: 10px;
+  }
+
+  
+  .imgNovedades{
+    width: 250px;
+  }
+  .cabecera{
+    background-position: 0px;
+  }
+
 }
