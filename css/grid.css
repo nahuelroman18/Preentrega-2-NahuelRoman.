@@ -47,12 +47,16 @@
 
 .cabecera{
   background-image: url('../img/banner_definitivo.jpg');
-  background-repeat: no-repeat;
   background-position: center -50px;
   background-size: cover;
   font-weight: 900;
   font-size: 19rem;
   grid-area: cabecera;
+}
+.publicidad{
+  background-image: url('../img/casinozeus.jpg');
+  background-position: center;
+  grid-area: publicidad;
 }
 .publicidad1{
   background-image: url('../img/concesionariaYamaha.jpg');
@@ -76,10 +80,10 @@
   background-position: center;
   grid-area: publicidad4;
 }
-.publicidad{
-  background-image: url('../img/casinozeus.jpg');
+.publicidad5{
+  background-image: url('../img/tiendaVelez.jpg');
   background-position: center;
-  grid-area: publicidad;
+  margin: 10px;
 }
 .seccion{
   grid-area: seccion;
@@ -95,4 +99,17 @@
 }
 .pie{
   grid-area: pie;
+}
+
+/* media queries */
+
+@media (max-width:920px){
+  .grid_marcas{
+      background-color: blue;
+  } 
+}
+@media (max-width:768px){
+  .grid_marcas{
+    background-color: white;
+} 
 }
