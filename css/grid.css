@@ -1,3 +1,168 @@
+*{  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* pseudoclas */
+.nav-item:hover{
+  background-color: rgb(241, 120, 120);
+  border-radius: 3px;
+}
+.nav-item:active{
+  background-color: rgb(241, 120, 120);
+  border-radius: 3px;
+}
+.nav-item:active a{
+  background-color: rgb(239, 58, 58);
+}
+.producto:hover{
+  background-color: grey;
+}
+.producto:hover .card_title{
+  color: rgb(239, 58, 58);
+}
+
+
+/* tipos */
+
+.tipos{
+  padding: 2rem 4%;
+  width: 100%;
+  background-color: rgb(243, 118, 118);
+}
+.tipos h2{
+  height: 70px;
+  text-align: center;
+}
+
+/* cards */
+.card{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+.card img {
+  border-radius: 2px 2px 0 0;
+  object-fit: cover;
+}
+.card .card_title{
+  padding: 0 10px;
+}
+.card .card_container{
+  width: 100%;
+  padding: 10px;
+  font-size: .80rem;
+
+}
+/* boton */
+.card .card_container a.boton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card .card_container a.boton:hover {
+  background-color: #166cb2;
+}
+
+.card .card_container a.boton:active {
+  background-color: #46afbd;
+}
+.my-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #45a049;
+}
+
+.my-button:active {
+  background-color: #3e8e41;
+}
+
+
+.card_icono{
+  width: 60px;
+  height: 70px;
+}
+.producto{
+  display: flex;
+  justify-content: center;
+}
+/* publicidad */
+.card_publicitario{
+  display: flex;
+  padding: 50px;
+  padding-top: 80px;
+  align-items: center;
+  justify-content: center;
+}
+.card_publicitaria_container{
+  background: rgb(255,85,0);
+  background: linear-gradient(90deg, rgba(255,85,0,1) 0%, rgba(140,129,130,1) 15%, rgba(244,230,139,1) 41%, rgba(244,229,139,1) 53%, rgba(237,238,145,1) 69%, rgba(244,229,139,1) 100%);
+}
+.texto_publicitario{
+  background-color: yellow;
+}
+
+/* imagines */
+.imgNovedades{
+  width: 320px;
+  height: 320px;
+}
+.remera{
+  width: 150px;
+}
+/* seccion */
+.seccion{
+  padding: 30px;
+}
+.seccion_carrusel{
+  padding-top: 10px;
+}
+.seccion_grid{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  margin: 10px;
+}
+.seccion_grid_text{
+  width: 50%;
+}
+
+/* footer */
+.logoRedes{
+  width: 15px;
+  height: 15px;
+}
+.pie_container{
+  background-color: rgb(247,9,9);
+  background: linear-gradient(90deg, rgba(247,9,9,0.4542191876750701) 2%, rgba(237,238,145,0.27494747899159666) 7%, rgba(244,229,139,1) 100%);
+}
+.carousel-inner{
+  padding: 15px;
+}
+/* esto de arriba era del style */
+
+
+
+
+
 .tipos_container{
   width:100%;
   padding: 1rem 4%;
